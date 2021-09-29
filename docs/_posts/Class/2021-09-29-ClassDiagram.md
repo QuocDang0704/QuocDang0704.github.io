@@ -15,14 +15,13 @@ categories: jekyll update
 
 **II. Các tính chất cơ bản của Class Diagram**
 
-`	`+ Tên class
++ Tên class
 
-`	`+ Attribute (field, property)
++ Attribute (field, property)
 
-`	`+ Operation(method, function)
++ Operation(method, function)
 
 Ví dụ:
-
 ![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/Class/Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.001.png)
 
 Như các bạn đã thấy thì ví dụ trên có tên class là **car,** Attribute là **(id:int, name:String, category:String)** và có Operation là(**run(): void**)
@@ -76,7 +75,7 @@ Ví dụ:
 - Cardinality được thể hiện dước dạng 
 - 1 – 1
 - 1 – N
-- N -N
+- N - N
 
 ![](Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.006.png)
 
