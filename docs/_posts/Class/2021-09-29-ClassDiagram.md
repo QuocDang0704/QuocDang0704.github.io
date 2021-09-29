@@ -23,7 +23,7 @@ categories: jekyll update
 
 Ví dụ:
 
-![](Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.001.png)
+![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/Class/Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.001.png)
 
 Như các bạn đã thấy thì ví dụ trên có tên class là **car,** Attribute là **(id:int, name:String, category:String)** và có Operation là(**run(): void**)
 
