@@ -22,6 +22,7 @@ categories: jekyll update
 + Operation(method, function)
 
 **Ví dụ:**
+
 ![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/Class/Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.001.png)
 
 Như các bạn đã thấy thì ví dụ trên có tên class là **car,** Attribute là **(id:int, name:String, category:String)** và có Operation là(**run(): void**)
@@ -40,6 +41,7 @@ Như các bạn đã thấy thì ví dụ trên có tên class là **car,** Attr
     - Được ký hiệu trong **class diagram** là** (+)
 
 **Ví dụ:**
+
 ![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/Class/Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.002.png)
 
 **IV. Các mối quan hệ giữa các Class**
@@ -54,8 +56,7 @@ Như các bạn đã thấy thì ví dụ trên có tên class là **car,** Attr
   - 1 Class chỉ kế thừa được duy nhất bởi 1 Class khác
   - Tên của  abstract class  sẽ được viết in nghiêng
 
-**Ví dụ** 
-- Class lamborghini và Class mercedes có những thuộc tính của 1 chiếc ô tô nên ta kế thừa Class car
+**Ví dụ** Class lamborghini và Class mercedes có những thuộc tính của 1 chiếc ô tô nên ta kế thừa Class car
 ![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/Class/Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.004.png)
 
 
@@ -63,8 +64,7 @@ Như các bạn đã thấy thì ví dụ trên có tên class là **car,** Attr
 
 - **Association** thể hiện mối qua hệ giữa 2 class trong UML có liên hệ với nhau nhưng không chỉ rõ mối liên hệ.Nó thể hiện 1 liên kết cấu trúc giữa các lớp ngang hàng
 
-**Ví dụ** 
-- Có 1 liên kết nhỏ giữa Class lamborghini và Class mercedes nhưng nó không chỉ rõ mối qua hệ 
+**Ví dụ** Có 1 liên kết nhỏ giữa Class lamborghini và Class mercedes nhưng nó không chỉ rõ mối qua hệ 
 ![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/Class/Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.005.png)
 
 
@@ -74,6 +74,7 @@ Như các bạn đã thấy thì ví dụ trên có tên class là **car,** Attr
 - 1 – 1
 - 1 – N
 - N - N
+
 ![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/Class/Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.006.png)
 
 **Aggregation**
@@ -90,8 +91,7 @@ Như các bạn đã thấy thì ví dụ trên có tên class là **car,** Attr
 - **Composition** là Một kiểu tập hợp đặc biệt mà các bộ phận bị phá hủy khi toàn bộ bị phá hủy.
 - Nếu Class mất thì Class B cũng sẽ mất hay nói cách khác là (Class A là sống và chết  với Class B)
 
-**Ví dụ**
-- Nếu nhà sản xuất oto mất đi, thì các nhân viên trong sản xuất đó sẽ mất đi, vì thế ta nói class staff sống và chết với class product.
+**Ví dụ** Nếu nhà sản xuất oto mất đi, thì các nhân viên trong sản xuất đó sẽ mất đi, vì thế ta nói class staff sống và chết với class product.
 ![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/Class/Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.008.png)
 
 **Dependency**
@@ -104,8 +104,7 @@ Như các bạn đã thấy thì ví dụ trên có tên class là **car,** Attr
 
 - **Realization** là mối quan hệ giữa lớp kế hoạch chi tiết và đối tượng chứa thông tin chi tiết về mức độ triển khai tương ứng của nó. Đối tượng này được cho là nhận ra lớp kế hoạch chi tiết. Nói cách khác, bạn có thể hiểu đây là mối quan hệ giữa giao diện và lớp triển khai
 
-**Ví dụ**: 
-- Giao diện Chủ sở hữu có thể chỉ định các phương pháp mua tài sản và định đoạt tài sản. Các lớp Person và Corporation cần triển khai các phương thức này, có thể theo cách rất khác
+**Ví dụ** Giao diện Chủ sở hữu có thể chỉ định các phương pháp mua tài sản và định đoạt tài sản. Các lớp Person và Corporation cần triển khai các phương thức này, có thể theo cách rất khác
 ![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/Class/Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.009.png)
 
 **Multiplicity trong class diagram**
@@ -124,5 +123,6 @@ Như các bạn đã thấy thì ví dụ trên có tên class là **car,** Attr
 
 - Sơ đồ lớp cũng có thể có các ghi chú đính kèm với các lớp hoặc các mối quan hệ.
 ![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/Class/Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.011.png)
+
 
 Nguồn tham khảo: [tại đây](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/)
