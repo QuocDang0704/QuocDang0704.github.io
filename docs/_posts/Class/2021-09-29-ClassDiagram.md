@@ -21,7 +21,7 @@ categories: jekyll update
 
 + Operation(method, function)
 
-Ví dụ:
+**Ví dụ:**
 ![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/Class/Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.001.png)
 
 Như các bạn đã thấy thì ví dụ trên có tên class là **car,** Attribute là **(id:int, name:String, category:String)** và có Operation là(**run(): void**)
@@ -39,16 +39,14 @@ Như các bạn đã thấy thì ví dụ trên có tên class là **car,** Attr
   - Public ( + ): Mọi đối tượng đều có thể sử dụng.
     - Được ký hiệu trong **class diagram** là** (+)
 
-Ví dụ:
-
-![](Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.002.png)
+**Ví dụ:**
+![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/Class/Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.002.png)
 
 **IV. Các mối quan hệ giữa các Class**
 
 - Các mối quan hệ trong trong class diagram được sử dụng để thể hiện mối qua hệ giữa các Class, giữa class này với Class khác .
-- Có 6 loại thể hiện mối quan hệ
-
-![](Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.003.png)
+- Có 6 loại thể hiện mối quan hệ:
+![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/Class/Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.003.png)
 
 **Inheritance**  
 
@@ -56,18 +54,18 @@ Ví dụ:
   - 1 Class chỉ kế thừa được duy nhất bởi 1 Class khác
   - Tên của  abstract class  sẽ được viết in nghiêng
 
-**Ví dụ** Class lamborghini và Class mercedes có những thuộc tính của 1 chiếc ô tô nên ta kế thừa Class car
-
-![](Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.004.png)
+**Ví dụ** 
+- Class lamborghini và Class mercedes có những thuộc tính của 1 chiếc ô tô nên ta kế thừa Class car
+![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/Class/Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.004.png)
 
 
 **Association**
 
 - **Association** thể hiện mối qua hệ giữa 2 class trong UML có liên hệ với nhau nhưng không chỉ rõ mối liên hệ.Nó thể hiện 1 liên kết cấu trúc giữa các lớp ngang hàng
 
-**Ví dụ** có 1 liên kết nhỏ giữa Class lamborghini và Class mercedes nhưng nó không chỉ rõ mối qua hệ 
-
-![](Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.005.png)
+**Ví dụ** 
+- Có 1 liên kết nhỏ giữa Class lamborghini và Class mercedes nhưng nó không chỉ rõ mối qua hệ 
+![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/Class/Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.005.png)
 
 
 **Cardinality**
@@ -76,8 +74,7 @@ Ví dụ:
 - 1 – 1
 - 1 – N
 - N - N
-
-![](Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.006.png)
+![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/Class/Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.006.png)
 
 **Aggregation**
 
@@ -86,17 +83,16 @@ Ví dụ:
 - Nếu Class A mất thì đối tượng tạo ra class A là Class B vẫn tồi tại độc lập hay nói cách khác là (Class A là 1 phần của Class B)
 
 **Ví dụ**  Class lamborghini và Class mercedes đểu được sản xuất bởi nhà sản xuất, nếu Class lamborghini và Class mercedes mất đi thì Class product vẫn tồn tại, bởi nó có thể sản xuất xe khác.
-
-![](Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.007.png)
+![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/Class/Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.007.png)
 
 **Composition**
 
 - **Composition** là Một kiểu tập hợp đặc biệt mà các bộ phận bị phá hủy khi toàn bộ bị phá hủy.
 - Nếu Class mất thì Class B cũng sẽ mất hay nói cách khác là (Class A là sống và chết  với Class B)
 
-**Ví dụ** Nếu nhà sản xuất oto mất đi, thì các nhân viên trong sản xuất đó sẽ mất đi, vì thế ta nói class staff sống và chết với class product.
-
-![](Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.008.png)
+**Ví dụ**
+- Nếu nhà sản xuất oto mất đi, thì các nhân viên trong sản xuất đó sẽ mất đi, vì thế ta nói class staff sống và chết với class product.
+![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/Class/Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.008.png)
 
 **Dependency**
 
@@ -108,9 +104,9 @@ Ví dụ:
 
 - **Realization** là mối quan hệ giữa lớp kế hoạch chi tiết và đối tượng chứa thông tin chi tiết về mức độ triển khai tương ứng của nó. Đối tượng này được cho là nhận ra lớp kế hoạch chi tiết. Nói cách khác, bạn có thể hiểu đây là mối quan hệ giữa giao diện và lớp triển khai
 
-Ví dụ: giao diện Chủ sở hữu có thể chỉ định các phương pháp mua tài sản và định đoạt tài sản. Các lớp Person và Corporation cần triển khai các phương thức này, có thể theo cách rất khác
-
-![](Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.009.png)
+**Ví dụ**: 
+- Giao diện Chủ sở hữu có thể chỉ định các phương pháp mua tài sản và định đoạt tài sản. Các lớp Person và Corporation cần triển khai các phương thức này, có thể theo cách rất khác
+![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/Class/Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.009.png)
 
 **Multiplicity trong class diagram**
 
@@ -122,13 +118,11 @@ Ví dụ: giao diện Chủ sở hữu có thể chỉ định các phương ph�
   - m...n: có tối thiểu là m và tối đa là n
 
 **Class Diagram Example: Order System**
-
-![](Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.010.png)
+![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/Class/Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.010.png)
 
 **Class Diagram Example: GUI**
 
 - Sơ đồ lớp cũng có thể có các ghi chú đính kèm với các lớp hoặc các mối quan hệ.
-
-![](Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.011.png)
+![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/Class/Aspose.Words.19cf09df-737a-4d9f-b87d-cbf7d845f5c3.011.png)
 
 Nguồn tham khảo: [tại đây](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/)
