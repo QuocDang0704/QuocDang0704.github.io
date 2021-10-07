@@ -9,9 +9,9 @@ categories: jekyll update
 
 **I. Khái niệm**
 
-`	`- **Class diagram** mô tả kiểu của các đối tượng trong hệ thống và các loại quan hệ khác nhau tồn tại giữa chúng.Đồng thời cũng là 1 kỹ thuật mô hình hóa tồn tại ở tất cả các phương pháp phát triển hướng đối tượng.
+- **Class diagram** mô tả kiểu của các đối tượng trong hệ thống và các loại quan hệ khác nhau tồn tại giữa chúng.Đồng thời cũng là 1 kỹ thuật mô hình hóa tồn tại ở tất cả các phương pháp phát triển hướng đối tượng.
 
-`	`- Dùng class diagram giúp các lập trình viên trao đổi và hiểu nhau hơn.
+- Dùng class diagram giúp các lập trình viên trao đổi và hiểu nhau hơn.
 
 **II. Các tính chất cơ bản của Class Diagram**
 
