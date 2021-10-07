@@ -1,0 +1,128 @@
+﻿**Hướng dẫn biểu đồ mối quan hệ** 
+
+**(ERD)**
+
+**Biểu đồ ERD là cái gì?**
+
+- An Entity Relationship Diagram (ERD) là một biểu đồ trực quan của các thực thể khác nhau trong một hệ thống và cách chúng liên quan với nhau.
+
+**ERD được sử dụng khi nào?**
+
+- Entity relationship diagrams được sử dụng trong giai đoạn lập kế hoạch của dự án phần mềm. Giúp xác định các yếu tố hệ thống khác nhau và mối quan hệ của họ với nhau. Nó thường được sử dụng làm cơ sở cho thiết kê cơ sở dữ liệu
+
+Các biểu tượng và ký kiệu của thực thể trong ER diagram:
+
+![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/ERD/Aspose.Words.0fd2b075-d5af-43b4-8677-4af9a90fd446.001.png)
+
+Có ba yếu tố cơ bản trong Sơ đồ ER: 
+
+- Thực thể
+- Thuộc tính
+  - Thuộc tính định danh
+  - Thuộc tính đơn
+  - Thuộc tính phức hợp
+  - Thuộc tính đơn trị 
+  - Thuộc tính đa trị
+  - Thuộc tính dẫn xuất
+- Mối quan hệ     
+
+**Entity**
+
+Entity đại điện cho 1 thực thể. 
+
+Một thực thể có thể là một người, địa điểm, sự kiện hoặc đối tượng có liên quan đến một hệ thống nhất định. 
+
+Ví dụ, một hệ thống trường học có thể bao gồm sinh viên, giáo viên, các khóa học lớn, đối tượng, lệ phí và các mặt hàng khác. Các thực thể được thể hiện trong sơ đồ erd bởi một hình chữ nhật và được đặt tên bằng danh từ số ít.
+
+**Weak Entity(thực thể yếu)**
+
+- Weak Entity là một thực thể phụ thuộc vào sự tồn tại của một thực thể khác. 
+- Nó có thể được định nghĩa là một thực thể không thể được xác định bởi các thuộc tính riêng của nó. 
+- Nó sử dụng khóa ngoại kết hợp với nó được quy kết để tạo thành khóa chính. 
+
+Ví dụ: 1 thực thể hóa đơn chi tiết phụ thuộc vào sự tồn tại của hóa đơn
+
+![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/ERD/Aspose.Words.0fd2b075-d5af-43b4-8677-4af9a90fd446.002.png)
+
+**Attribute**
+
+- Attribute là là những thuộc tính, đặc điểm của một thực thể.
+
+
+
+Ví dụ: thực thể hóa đơn có các thuộc tính là mã, tên hóa đơn
+
+![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/ERD/Aspose.Words.0fd2b075-d5af-43b4-8677-4af9a90fd446.003.png)
+
+**Multivalued Attribute(Thuộc tính đa giá trị)**
+
+- Nếu một thuộc tính có thể có nhiều hơn một giá trị thì nó được gọi là thuộc tính đa giá trị. 
+
+Ví dụ, thực student có thể có nhiều số phone number.
+
+![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/ERD/Aspose.Words.0fd2b075-d5af-43b4-8677-4af9a90fd446.004.png)
+
+**Derived Attribute**
+
+**Derived Attribute** được gọi là thuộc tính trích dẫn.
+
+Một thuộc tính dựa trên một thuộc tính khác. 
+
+Ví dụ: Đối với tuổi tuổi của học sinh, chúng ta có thể lấy ra tuổi thông qua thuộc tính ngày sinh của sinh viên
+
+` `![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/ERD/Aspose.Words.0fd2b075-d5af-43b4-8677-4af9a90fd446.005.png)
+
+**Relationship(Mối quan hệ)**
+
+**Relationship**  được dùng để mô tả cách các thực thể.
+
+Ví dụ: thực thể cha có mỗi quan hệ với thực thể con là tạo ra.
+
+![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/ERD/Aspose.Words.0fd2b075-d5af-43b4-8677-4af9a90fd446.006.png)
+
+**Recursive Relationship(Mối quan hệ đệ quy)**
+
+Nếu một thực thể tham gia nhiều lần trong một mối quan hệ, nó được gọi là mối quan hệ đệ quy. 
+
+Ví dụ: thực thể trưởng phòng có thể là nhân viên và quản lý  nhân viên nhưng cũng có thể là người bị quản lý
+
+![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/ERD/Aspose.Words.0fd2b075-d5af-43b4-8677-4af9a90fd446.007.png)
+
+**Cardinality and Ordinality**
+
+Cardinality and Ordinality được dùng để xác định thêm mối quan hệ giữa các thực thể bằng cách đặt mối quan hệ giữa các thực thể. 
+
+Ví dụ: 1 công ty có nhiều nhân viên, nên mối quan hệ giữa công ty với nhân viên là 1-N
+
+![](https://raw.githubusercontent.com/QuocDang0704/QuocDang0704.github.io/master/docs/_posts/ERD/Aspose.Words.0fd2b075-d5af-43b4-8677-4af9a90fd446.008.png)
+
+**Làm thế nào để vẽ sơ đồ erd ?**
+
+Đây là  cách thực hiện tạo sơ đồ erd
+
+1. Xác định tất cả các thực thể trong hệ thống. Một thực thể chỉ xuất hiện một lần trong một sơ đồ cụ thể. Tạo hình chữ nhật cho tất cả các thực thể và đặt tên cho chúng đúng cách. 
+1. Xác định mối quan hệ giữa các thực thể. Kết nối chúng bằng cách sử dụng một dòng và thêm một viên kim cương ở giữa mô tả mối quan hệ. 
+1. Thêm thuộc tính cho các thực thể. Đưa ra tên thuộc tính có ý nghĩa để chúng có thể được hiểu dễ dàng.
+
+Nhìn có vẻ đơn giản phải không? 
+
+Nhưng trong một hệ thống phức tạp, nó có thể là một cơn ác mộng để xác định các mối quan hệ :<
+
+Các vẽ ER Diagram tốt nhất
+
+1. Cung cấp một tên chính xác và thích hợp cho từng thực thể, thuộc tính và mối quan hệ trong sơ đồ. Điều khoản đơn giản và quen thuộc luôn luôn đánh bại những từ mơ hồ, âm thanh kỹ thuật. Trong các thực thể đặt tên, hãy nhớ sử dụng danh từ số ít. Tuy nhiên, tính từ có thể được sử dụng để phân biệt các đơn vị thuộc cùng một lớp (ví dụ nhân viên toàn thời gian và nhân viên toàn thời gian). Trong khi đó, tên thuộc tính phải có ý nghĩa, độc lập, độc lập hệ thống và dễ hiểu.
+1. Loại bỏ các mối quan hệ mơ hồ, dư thừa hoặc không cần thiết giữa các thực thể.
+1. Không bao giờ kết nối một mối quan hệ với một mối quan hệ khác.
+1. Sử dụng hiệu quả màu sắc. Bạn có thể sử dụng màu sắc để phân loại các thực thể tương tự hoặc để tô sáng các khu vực chính trong sơ đồ của bạn.
+
+**Lợi ích của ERD**
+
+1. Sơ đồ er tạo thành một khung rất hữu ích để tạo và thao tác cơ sở dữ liệu. Đầu tiên, sơ đồ er rất dễ hiểu và không yêu cầu một người trải qua đào tạo rộng rãi để có thể làm việc với nó một cách hiệu quả và chính xác. Điều này có nghĩa là các nhà thiết kế có thể sử dụng các sơ đồ er để dễ dàng giao tiếp với các nhà phát triển, khách hàng và người dùng cuối, bất kể sự thành thạo CNTT của họ.
+1. Sơ đồ er dễ dàng có thể dịch được thành các bảng quan hệ có thể được sử dụng để nhanh chóng xây dựng cơ sở dữ liệu. Ngoài ra, các sơ đồ ER diagrams có thể được sử dụng để phát triển cơ sở dữ liệu như bản thiết kế để triển khai dữ liệu trong các ứng dụng phần mềm cụ thể..
+1. Sơ đồ ER diagrams có thể được áp dụng để mô tả các mối quan hệ và hoạt động của dự án.
+
+**Lời khuyên**
+
+1. Bạn có thể vẽ sơ đồ mối quan hệ thực thể thủ công, đặc biệt là khi bạn chỉ cần hiển thị không chính thức các hệ thống đơn giản với các đồng nghiệp của bạn. 
+1. Tuy nhiên, đối với các hệ thống phức tạp hơn và đối với đối tượng bên ngoài, bạn cần phần mềm sơ đồ như Creately để chế tạo các sơ đồ ER hấp dẫn trực quan và chính xác. 
+
