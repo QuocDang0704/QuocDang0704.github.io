@@ -6,6 +6,6 @@ facebook_username: BaoQuoc0407
 github_username:  QuocDang0704
 
 # Build settings
-theme: minima
+theme: liquid #minima
 plugins:
   - BaoQuoc0407-feed
