@@ -1,6 +1,6 @@
 {
-  "updatedAt": "",
+  "updatedAt": "2026-10-28T15:04:17.802Z",
   "configured": false,
-  "reason": "Chưa chạy workflow lần nào. Hãy thiết lập biến DAILYDEV_RSS_URL rồi chạy Action 'Cập nhật bài viết daily.dev'.",
+  "reason": "Chưa cấu hình biến DAILYDEV_RSS_URL trong repo.",
   "items": []
 }
