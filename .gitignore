@@ -1,0 +1,15 @@
+# Kiro / editor
+.kiro/
+
+# Jekyll build output
+docs/_site/
+docs/.sass-cache/
+docs/.jekyll-cache/
+docs/.jekyll-metadata
+
+# Dependencies
+docs/vendor/
+
+# OS files
+.DS_Store
+Thumbs.db

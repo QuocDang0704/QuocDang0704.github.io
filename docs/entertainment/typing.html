@@ -1,0 +1,77 @@
+---
+layout: default
+title: Luyện gõ 10 ngón
+permalink: /entertainment/typing/
+---
+
+<section class="section container page-top typing-page">
+  <div class="section-head">
+    <nav class="breadcrumb">
+      <a href="{{ '/library/' | relative_url }}">Thư viện</a> /
+      <a href="{{ '/entertainment/' | relative_url }}">Giải trí</a> /
+      <span>Luyện gõ 10 ngón</span>
+    </nav>
+    <h1>⌨️ Luyện gõ 10 ngón</h1>
+    <p>Rèn phản xạ bàn phím và đo tốc độ đánh máy của bạn theo thời gian thực.</p>
+  </div>
+
+  <!-- Thanh điều khiển -->
+  <div class="typing-controls">
+    <div class="control-group">
+      <label>Ngôn ngữ</label>
+      <div class="segmented" id="langSeg">
+        <button data-lang="vi" class="active">Tiếng Việt</button>
+        <button data-lang="en">English</button>
+        <button data-lang="code">Code</button>
+      </div>
+    </div>
+    <div class="control-group">
+      <label>Thời gian</label>
+      <div class="segmented" id="timeSeg">
+        <button data-time="15">15s</button>
+        <button data-time="30" class="active">30s</button>
+        <button data-time="60">60s</button>
+      </div>
+    </div>
+    <button class="btn btn-ghost" id="restartBtn" title="Làm lại (Esc)">↻ Làm lại</button>
+  </div>
+
+  <!-- Thống kê trực tiếp -->
+  <div class="typing-stats">
+    <div class="stat"><span class="stat-value" id="statTime">30</span><span class="stat-label">Giây</span></div>
+    <div class="stat"><span class="stat-value" id="statWpm">0</span><span class="stat-label">WPM</span></div>
+    <div class="stat"><span class="stat-value" id="statAcc">100%</span><span class="stat-label">Chính xác</span></div>
+    <div class="stat"><span class="stat-value" id="statChars">0</span><span class="stat-label">Ký tự</span></div>
+  </div>
+
+  <!-- Khu vực gõ -->
+  <div class="typing-box" id="typingBox" tabindex="0">
+    <div class="typing-text" id="typingText"></div>
+    <div class="typing-hint" id="typingHint">Nhấp vào đây rồi bắt đầu gõ…</div>
+    <input type="text" id="typingInput" class="typing-input" autocomplete="off" autocorrect="off"
+           autocapitalize="off" spellcheck="false" aria-label="Khu vực gõ">
+  </div>
+
+  <!-- Bàn phím ảo -->
+  <div class="keyboard" id="keyboard" aria-hidden="true"></div>
+
+  <!-- Kết quả -->
+  <div class="result-overlay" id="resultOverlay" hidden>
+    <div class="result-card">
+      <h2>Kết quả</h2>
+      <div class="result-grid">
+        <div><span class="result-value" id="rWpm">0</span><span class="result-label">WPM</span></div>
+        <div><span class="result-value" id="rAcc">0%</span><span class="result-label">Chính xác</span></div>
+        <div><span class="result-value" id="rChars">0</span><span class="result-label">Ký tự đúng</span></div>
+        <div><span class="result-value" id="rErr">0</span><span class="result-label">Lỗi</span></div>
+      </div>
+      <p class="result-note" id="resultNote"></p>
+      <button class="btn btn-primary" id="resultRestart">Thử lại</button>
+    </div>
+  </div>
+
+  <p class="typing-tip">💡 Mẹo: Đặt hai ngón trỏ lên phím <kbd>F</kbd> và <kbd>J</kbd> (có gờ nổi) để định vị mà không cần nhìn bàn phím.</p>
+</section>
+
+<link rel="stylesheet" href="{{ '/assets/css/typing.css' | relative_url }}">
+<script src="{{ '/assets/js/typing.js' | relative_url }}"></script>

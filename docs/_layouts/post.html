@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<article class="post container">
+  <header class="post-head">
+    {% if page.categories %}
+    <div class="post-tags">
+      {% for cat in page.categories %}<span class="tag">{{ cat }}</span>{% endfor %}
+    </div>
+    {% endif %}
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d/%m/%Y" }}</time>
+      · {{ content | number_of_words | divided_by: 180 | plus: 1 }} phút đọc
+    </p>
+  </header>
+  <div class="post-body prose">
+    {{ content }}
+  </div>
+  <nav class="post-nav">
+    <a href="{{ '/learning/' | relative_url }}" class="btn btn-ghost">← Quay lại Học hỏi</a>
+  </nav>
+</article>

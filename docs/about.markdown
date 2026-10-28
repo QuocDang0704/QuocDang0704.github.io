@@ -1,15 +1,22 @@
 ---
 layout: page
-title: About
+title: Giới thiệu
+subtitle: Một chút về mình
 permalink: /about/
 ---
 
-This is where Quốc shares some information technology persevering as well as sharing some of the projects that have been done at [Github](https://github.com/QuocDang0704/)
+Xin chào, mình là **Quốc Đang** 👋
 
-You can find the source code for Minima at GitHub:
-[QuocDang0704](https://github.com/QuocDang0704/)
+Đây là nơi mình chia sẻ những kiến thức công nghệ góp nhặt được trên hành trình học lập trình, cùng với một vài dự án nhỏ vui vẻ mình tự tay xây dựng.
 
-You can contact me through:
-[facebook](https://www.facebook.com/BaoQuoc0407/)
+### Mình thường viết về
+- Ngôn ngữ & khái niệm lập trình (Java, Lambda, SOLID...)
+- Thiết kế hệ thống & UML (Class Diagram, ERD, Use Case...)
+- Công cụ lập trình (Visual Studio, VS Code...)
 
+### Kết nối với mình
+- 💻 GitHub: [QuocDang0704](https://github.com/QuocDang0704/)
+- 📘 Facebook: [BaoQuoc0407](https://www.facebook.com/BaoQuoc0407/)
+- ✉️ Email: [dangquoc0704@gmail.com](mailto:dangquoc0704@gmail.com)
 
+Cảm ơn bạn đã ghé thăm. Hãy thử mục [Giải trí]({{ '/entertainment/' | relative_url }}) để luyện gõ phím nhé!

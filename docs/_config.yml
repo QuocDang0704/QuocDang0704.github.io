@@ -1,11 +1,34 @@
-title: My Blog
+title: Quốc Đang
+tagline: Lập trình · Chia sẻ · Trải nghiệm
+description: >-
+  Trang cá nhân của Quốc Đang - nơi chia sẻ kiến thức lập trình và những
+  trải nghiệm thú vị. Thư viện gồm hai mục: Học hỏi và Giải trí.
+author: Quốc Đang
 email: dangquoc0704@gmail.com
-baseurl: "" 
-url: ""
+baseurl: ""
+url: "https://quocdang0704.github.io"
+
 facebook_username: BaoQuoc0407
-github_username:  QuocDang0704
+github_username: QuocDang0704
 
 # Build settings
-theme: minima
 plugins:
-  - BaoQuoc0407-feed
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Mặc định cho bài viết
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+# Loại trừ khỏi bản build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .gitignore
+  - master
+  - 404.zip
