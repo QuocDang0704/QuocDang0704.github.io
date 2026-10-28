@@ -1,0 +1,47 @@
+name: Cập nhật bài viết daily.dev
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # mỗi 6 tiếng
+  push:
+    branches: [master]
+    paths:
+      - '.github/scripts/fetch-dailydev.mjs'
+      - '.github/workflows/dailydev.yml'
+  workflow_dispatch: {} # cho phép chạy thủ công từ tab Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dailydev-feed
+  cancel-in-progress: true
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Thiết lập Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Tải RSS daily.dev -> JSON
+        env:
+          DAILYDEV_RSS_URL: ${{ vars.DAILYDEV_RSS_URL }}
+        run: node .github/scripts/fetch-dailydev.mjs
+
+      - name: Commit nếu có thay đổi
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- docs/_data/dailydev.json; then
+            git add docs/_data/dailydev.json
+            git commit -m "chore: cập nhật bài viết daily.dev [skip ci]"
+            git push
+          else
+            echo "Không có thay đổi, bỏ qua commit."
+          fi

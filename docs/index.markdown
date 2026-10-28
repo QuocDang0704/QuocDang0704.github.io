@@ -7,7 +7,7 @@ title: Trang chủ
   <div class="container hero-inner">
     <div class="hero-text">
       <p class="hero-eyebrow">👋 Xin chào, mình là</p>
-      <h1 class="hero-title">Quốc Đang</h1>
+      <h1 class="hero-title">Quốc Đặng</h1>
       <p class="hero-lead">
         Một người thích <strong>lập trình</strong>, viết lách và khám phá công nghệ.
         Đây là góc nhỏ nơi mình chia sẻ kiến thức và tạo ra những thứ vui vẻ.
@@ -26,7 +26,7 @@ title: Trang chủ
       <div class="code-card">
         <div class="code-dots"><span></span><span></span><span></span></div>
         <pre><code><span class="c-key">const</span> <span class="c-var">me</span> = {
-  <span class="c-prop">name</span>: <span class="c-str">"Quốc Đang"</span>,
+  <span class="c-prop">name</span>: <span class="c-str">"Quốc Đặng"</span>,
   <span class="c-prop">role</span>: <span class="c-str">"Developer"</span>,
   <span class="c-prop">loves</span>: [<span class="c-str">"code"</span>, <span class="c-str">"học"</span>, <span class="c-str">"game"</span>],
   <span class="c-prop">coffee</span>: <span class="c-key">true</span>
@@ -39,7 +39,6 @@ title: Trang chủ
 <section class="section container">
   <div class="section-head">
     <h2>Thư viện của mình</h2>
-    <p>Mọi thứ được chia thành hai mục rõ ràng để bạn dễ tìm.</p>
   </div>
   <div class="cards cards-2">
     <a href="{{ '/learning/' | relative_url }}" class="card card-learning">

@@ -5,7 +5,7 @@ subtitle: Một chút về mình
 permalink: /about/
 ---
 
-Xin chào, mình là **Quốc Đang** 👋
+Xin chào, mình là **Quốc Đặng** 👋
 
 Đây là nơi mình chia sẻ những kiến thức công nghệ góp nhặt được trên hành trình học lập trình, cùng với một vài dự án nhỏ vui vẻ mình tự tay xây dựng.
 

@@ -1,0 +1,6 @@
+{
+  "updatedAt": "",
+  "configured": false,
+  "reason": "Chưa chạy workflow lần nào. Hãy thiết lập biến DAILYDEV_RSS_URL rồi chạy Action 'Cập nhật bài viết daily.dev'.",
+  "items": []
+}
