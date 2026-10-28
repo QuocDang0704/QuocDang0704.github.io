@@ -18,26 +18,26 @@ permalink: /entertainment/typing/
   <!-- Thanh điều khiển -->
   <div class="typing-controls">
     <div class="control-group">
-      <label>Ngôn ngữ</label>
-      <div class="segmented" id="langSeg">
-        <button data-lang="vi" class="active">Tiếng Việt</button>
-        <button data-lang="en">English</button>
-        <button data-lang="code">Code</button>
+      <label id="langLabel">Ngôn ngữ</label>
+      <div class="segmented" id="langSeg" role="group" aria-labelledby="langLabel">
+        <button type="button" data-lang="vi" class="active" aria-pressed="true">Tiếng Việt</button>
+        <button type="button" data-lang="en" aria-pressed="false">English</button>
+        <button type="button" data-lang="code" aria-pressed="false">Code</button>
       </div>
     </div>
     <div class="control-group">
-      <label>Thời gian</label>
-      <div class="segmented" id="timeSeg">
-        <button data-time="15">15s</button>
-        <button data-time="30" class="active">30s</button>
-        <button data-time="60">60s</button>
+      <label id="timeLabel">Thời gian</label>
+      <div class="segmented" id="timeSeg" role="group" aria-labelledby="timeLabel">
+        <button type="button" data-time="15" aria-pressed="false">15s</button>
+        <button type="button" data-time="30" class="active" aria-pressed="true">30s</button>
+        <button type="button" data-time="60" aria-pressed="false">60s</button>
       </div>
     </div>
-    <button class="btn btn-ghost" id="restartBtn" title="Làm lại (Esc)">↻ Làm lại</button>
+    <button type="button" class="btn btn-ghost" id="restartBtn" title="Làm lại (Esc)">↻ Làm lại</button>
   </div>
 
   <!-- Thống kê trực tiếp -->
-  <div class="typing-stats">
+  <div class="typing-stats" aria-live="polite">
     <div class="stat"><span class="stat-value" id="statTime">30</span><span class="stat-label">Giây</span></div>
     <div class="stat"><span class="stat-value" id="statWpm">0</span><span class="stat-label">WPM</span></div>
     <div class="stat"><span class="stat-value" id="statAcc">100%</span><span class="stat-label">Chính xác</span></div>

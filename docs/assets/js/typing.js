@@ -261,18 +261,24 @@
     else if (e.key === ' ') flashKey(' ');
   });
 
+  function selectInGroup(group, btn) {
+    group.querySelectorAll('button').forEach(function (x) {
+      var on = x === btn;
+      x.classList.toggle('active', on);
+      x.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+  }
+
   langSeg.addEventListener('click', function (e) {
     var b = e.target.closest('button'); if (!b) return;
-    langSeg.querySelectorAll('button').forEach(function (x) { x.classList.remove('active'); });
-    b.classList.add('active');
+    selectInGroup(langSeg, b);
     state.lang = b.dataset.lang;
     reset();
   });
 
   timeSeg.addEventListener('click', function (e) {
     var b = e.target.closest('button'); if (!b) return;
-    timeSeg.querySelectorAll('button').forEach(function (x) { x.classList.remove('active'); });
-    b.classList.add('active');
+    selectInGroup(timeSeg, b);
     state.duration = parseInt(b.dataset.time, 10);
     reset();
   });

@@ -1,5 +1,7 @@
-# Kiro / editor
-.kiro/
+# Kiro: bỏ qua cấu hình editor tạm, nhưng giữ lại agent & skills để chia sẻ
+.kiro/*
+!.kiro/agents/
+!.kiro/skills/
 
 # Jekyll build output
 docs/_site/

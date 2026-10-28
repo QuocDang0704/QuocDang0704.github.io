@@ -55,7 +55,7 @@
 .key.next { background: color-mix(in srgb, var(--accent) 18%, transparent); color: var(--accent); border-color: var(--accent); }
 
 /* Kết quả */
-.result-overlay { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 20px;
+.result-overlay { position: fixed; inset: 0; z-index: var(--z-overlay, 100); display: grid; place-items: center; padding: 20px;
   background: color-mix(in srgb, #000 55%, transparent); backdrop-filter: blur(4px); animation: fade .2s; }
 .result-overlay[hidden] { display: none; }
 @keyframes fade { from { opacity: 0; } }
